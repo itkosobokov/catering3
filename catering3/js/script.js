@@ -12,6 +12,14 @@ return el;
 		fnameElement = document.getElementById(fnameId);
 		//window.alert(fnameElement.value);
 		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
+		console.log(fnameElement.value);
 
 		var snameId = "sname";
 		var snameElement = document.getElementById(snameId);
