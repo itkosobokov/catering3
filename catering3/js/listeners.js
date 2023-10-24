@@ -15,10 +15,10 @@
 //     console.log.out("fafafafw");
 // }
 
-function aaddMessage() {
-    console.log("fafafafw");
-}
+// function aaddMessage() {
+//     console.log("fafafafw");
+// }
 
-var sendButton = window.getElementById("sendButton");
+// var sendButton = document.getElementById("send-button");
 
-sendButton.addEventListener('click', aaddMessage);
+// sendButton.addEventListener('click' , aaddMessage);
