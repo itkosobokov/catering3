@@ -65,8 +65,8 @@ h1 {
 }
 h2 {
 	color: steelblue;
-	text-align: center;
-	font-size: 20px;
+	text-align: left;
+	font-size: 25px;
 	text-shadow: 1px 0 10px pink;
 }
 
@@ -77,10 +77,16 @@ h3 {
 	font-family: "Montez";
 
 	letter-spacing: 3px;
-	text-align: center;
+	text-align: left;
  }
  h3 a {
 	color: #c2a77a;
+ }
+
+ ul {
+	color: steelblue;
+	text-shadow: 1px 0 10px pink;
+
  }
 
 img {
