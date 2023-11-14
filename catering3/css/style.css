@@ -212,4 +212,26 @@ img {
 	background: #e91e63;
 	box-shadow: 0 30px 0 #e91e63;
   }
+
+  .jsmy-calculator {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	border: black 1px solid;
+	
+  }
+  .jsmy-calculator .operations-block button {
+	width: 40px;
+	height: 40px;
+	margin: 20px;
+  }
+  
+  .jsmy-calculator .inputs-block .input-block {
+	display: inline-block;
+	padding: 10px;
+  }
+  .jsmy-calculator .inputs-block .input-block label {
+	display: block;
+  }
   
