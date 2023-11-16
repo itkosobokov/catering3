@@ -3,53 +3,49 @@ var buttonMinus = document.getElementById("buttonMinus");
 var buttonMultyply = document.getElementById("buttonMultyply");
 var buttonDevide = document.getElementById("buttonDevide");
 
-function onButtonPlusClick(){
-    console.log("onButtonPlusClick");
-    var input1 = document.getElementById("number1");
-    var input2 = document.getElementById("number2");
+var input1 = document.getElementById("number1");
+var input2 = document.getElementById("number2");
 
-    var number1 = Number(input1.value);
-    var number2 = Number(input2.value);
-
-    var result = number1 + number2;
-
-    window.alert(result);
+function getNumber1() {
+    return Number(input1.value);
+    
 }
-function onButtonMinusClick(){
-    console.log("onButtonMinusClick");
-    var input1 = document.getElementById("number1");
-    var input2 = document.getElementById("number2");
+function getNumber2() {
+    return Number(input2.value);
+    
+}
 
-    var number1 = Number(input1.value);
-    var number2 = Number(input2.value);
-
-    var result = number1 - number2;
-
+function makeOperation(operationCode){
+    if (operationCode === "+") {
+        var result = getNumber1() + getNumber2();
+    } else if (operationCode === "-") {
+        var result = getNumber1() - getNumber2();
+    } else if (operationCode === "*") {
+        var result = getNumber1() * getNumber2();
+    } else if (operationCode === "/") {
+        var result = getNumber1() / getNumber2();
+    } else {
+        window.alert("Неизвестная операция");
+    }
+    
     window.alert(result);
+
+}
+
+
+function onButtonPlusClick(){
+  makeOperation("+");
+ 
+}
+
+function onButtonMinusClick(){
+    makeOperation("-");
 }
 function onButtonMultyplyClick(){
-    console.log("onButtonMultyplyClick");
-    var input1 = document.getElementById("number1");
-    var input2 = document.getElementById("number2");
-
-    var number1 = Number(input1.value);
-    var number2 = Number(input2.value);
-
-    var result = number1 * number2;
-
-    window.alert(result);
+    makeOperation("*");
 }
 function onButtonDevideClick(){
-    console.log("onButtonDevideClick");
-    var input1 = document.getElementById("number1");
-    var input2 = document.getElementById("number2");
-
-    var number1 = Number(input1.value);
-    var number2 = Number(input2.value);
-
-    var result = number1 / number2;
-
-    window.alert(result);
+    makeOperation("/");
 }
 
 buttonPlus.addEventListener('click', onButtonPlusClick);
