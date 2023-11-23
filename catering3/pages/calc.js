@@ -25,7 +25,7 @@ function makeOperation(operationCode){
     } else if (operationCode === "/") {
         var result = getNumber1() / getNumber2();
     } else {
-        window.alert("Неизвестная операция");
+        window.prompt("Неизвестная операция");
     }
     
     window.alert(result);
