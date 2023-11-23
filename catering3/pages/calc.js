@@ -28,7 +28,7 @@ function makeOperation(operationCode){
         window.prompt("Неизвестная операция");
     }
     
-    window.alert(result);
+    window.prompt(result);
 
 }
 
