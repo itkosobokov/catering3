@@ -57,14 +57,14 @@ return el;
 		}
 
 
-		var alertAlarm = "МЕНЯЕМ";
-		window.alert(alertAlarm);
+		// var alertAlarm = "МЕНЯЕМ";
+		// window.alert(alertAlarm);
 		hobbyEllement.value = "ХУЙ";
 		consoleLog(hobbyEllement);
 
 		fnameElement.className = "input-red";
 
-		window.alert(alertAlarm);
+		// window.alert(alertAlarm);
 		hobbyEllement.value = "ХУЙ222222";
 		consoleLog(hobbyEllement);
 
