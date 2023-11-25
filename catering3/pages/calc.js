@@ -35,19 +35,7 @@ function onOperationButtonClick(eventObject) {
     makeOperation(operation);
 }
 
-function addCommonEventListener(i) {
-    operationButtons[i].addEventListener('click', onOperationButtonClick);
-}
-
-var operationButtons = [buttonPlus, buttonMinus, buttonMultyply, buttonDevide]
-
-addCommonEventListener(0);
-addCommonEventListener(1);
-addCommonEventListener(2);
-addCommonEventListener(3);
-
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
-
+buttonPlus.addEventListener('click', onOperationButtonClick);
+buttonMinus.addEventListener('click', onOperationButtonClick);
+buttonMultyply.addEventListener('click', onOperationButtonClick);
+buttonDevide.addEventListener('click', onOperationButtonClick);
